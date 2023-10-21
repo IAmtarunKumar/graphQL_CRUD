@@ -133,13 +133,13 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
  
 }
   
-- `getUserById(id: ID!)`: Retrieve a User by their ID.
+
 
 ## Mutations
 
 <img src="./img//create_user.png" alt="">
 
-- `createUser`: Create User.  
+- `createUser(input: UserInput!)`: Create User.  
   Sample Query:
 
   ```graphql
@@ -150,13 +150,13 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
     }
 
 
-- `createUser(input: UserInput!)`: Create a new User.
+
 
 
 <hr>
 <img src="./img//update_user.png" alt="">
 
-- `updateUser`: Update User.  
+- `updateUser(id: ID!, input: UserInput!)`: Update User.  
   Sample Query:
 
   ```graphql
@@ -167,12 +167,12 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
     }
     }
 
-- `updateUser(id: ID!, input: UserInput!)`: Update a User.
+
 <hr>
 
 <img src="./img//delete_user.png" alt="">
 
-- `deleteUser`: Delete User.  
+- `deleteUser(id: ID!)`: Delete User.  
   Sample Query:
 
   ```graphql
@@ -185,14 +185,14 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 
 
-- `deleteUser(id: ID!)`: Delete a User.
+
 <hr>
 
 
 
 <img src="./img//create_todo.png" alt="">
 
-- `createTodo`: Create Todos.  
+- `createTodo(input: TodoInput!)`: Create Todos.  
   Sample Query:
 
   ```graphql
@@ -204,13 +204,13 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
   }
 }
 
-- `createTodo(input: TodoInput!)`: Create a new Todo.
+
 <hr>
 
 <img src="./img//update_todo.png" alt="">
 
 
-- `updateTodo`: Update todo.  
+- `updateTodo(id: ID!, input: TodoInput!)`: Update todo.  
   Sample Query:
   ```graphql
     mutation Mutation( $updateTodoId: ID!, $input: TodoInput!) {
@@ -221,13 +221,13 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 
 
-- `updateTodo(id: ID!, input: TodoInput!)`: Update a Todo.
+
 <hr>
 
 <img src="./img//delete_todo.png" alt="">
 
 
-- `deleteTodo`: delete Todos.  
+- `deleteTodo(id: ID!)`: delete Todos.  
   Sample Query:
   ```graphql
         mutation Mutation($deleteTodoId: ID!) {
@@ -237,7 +237,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 }
 
 
-- `deleteTodo(id: ID!)`: Delete a Todo.
+
 <hr>
 
 ## Error Handling
