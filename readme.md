@@ -61,16 +61,16 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 ## Queries
 
 
-![Alt Text]("./img/get all user.png")
+![Alt Text](./img/get all user.png)
 - `getTodos`: Retrieve all Todos.
 
-![Alt Text]("./img/get all user.png")
+![Alt Text](./img/get all user.png)
 - `getTodoById(id: ID!)`: Retrieve a Todo by its ID.
 
-![Alt Text]("./img/get all user.png")
+![Alt Text](./img/get all user.png)
 - `getAllUsers`: Retrieve all Users.
 
-![Alt Text]("./img/get user by id.png")
+![Alt Text](./img/get user by id.png)
 - `getUserById(id: ID!)`: Retrieve a User by their ID.
 
 ## Mutations
