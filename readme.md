@@ -75,7 +75,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
   }
 - `getTodos`: Retrieve all Todos.
 
-
+<hr>
 
 
 <img src="./img//get_todo_by_id.png" alt="">
@@ -94,7 +94,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 }
   
 - `getTodoById(id: ID!)`: Retrieve a Todo by its ID.
-
+<hr>
 
 
 <img src="./img//get_all_user.png" alt="">
@@ -136,12 +136,75 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 ## Mutations
 
+<img src="./img//get_all_todo.png" alt="">
+
+- `getTodos`: Create User.  
+  Sample Query:
+
+  ```graphql
+  mutation Mutation(  $input: UserInput!) {
+    createUser(input: $input) {
+    name email phone id
+    }
+    }
+
+
 - `createUser(input: UserInput!)`: Create a new User.
+
+
+<hr>
+<img src="./img//get_all_todo.png" alt="">
+
+- `getTodos`: Create User.  
+  Sample Query:
+
+  ```graphql
+  mutation Mutation(   $updateUserId: ID!,  $updateUserInput2: UserInput!) {
+    updateUser(id: $updateUserId, input: $updateUserInput2) {
+    name
+
+    }
+    }
+
 - `updateUser(id: ID!, input: UserInput!)`: Update a User.
+<hr>
 - `deleteUser(id: ID!)`: Delete a User.
+<hr>
+
+
+
+<img src="./img//get_all_todo.png" alt="">
+
+- `getTodos`: Create Todos.  
+  Sample Query:
+
+  ```graphql
+  mutation Mutation($input: TodoInput!) {
+  createTodo(input: $input) {
+    title
+    completed
+    userId
+  }
+}
+
 - `createTodo(input: TodoInput!)`: Create a new Todo.
+<hr>
+- `getTodos`: Create User.  
+  Sample Query:
+
+  ```graphql
+  mutation Mutation(   $updateUserId: ID!,  $updateUserInput2: UserInput!) {
+    updateUser(id: $updateUserId, input: $updateUserInput2) {
+    name
+
+    }
+    }
+
+
 - `updateTodo(id: ID!, input: TodoInput!)`: Update a Todo.
+<hr>
 - `deleteTodo(id: ID!)`: Delete a Todo.
+<hr>
 
 ## Error Handling
 
