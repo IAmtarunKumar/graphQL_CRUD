@@ -60,7 +60,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 ## Queries
 
-
+<img src="./img//get_all_todo.png" alt="">
 
 - `getTodos`: Retrieve all Todos.
     `Operation`
@@ -74,12 +74,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
     }
   }
 
-`Variable`
- 
-```graphql
-  {
-    ddff : fd
-  }
+
 
 
 
