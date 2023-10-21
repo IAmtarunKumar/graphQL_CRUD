@@ -61,7 +61,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 ## Queries
 
 
-!('./img/get_all_todo.png')
+!(./img/get_all_todo.png)
 - `getTodos`: Retrieve all Todos.
 
 ![Alt Text](./img/get all user.png)
