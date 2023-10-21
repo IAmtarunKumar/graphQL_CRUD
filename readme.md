@@ -104,13 +104,12 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
   ```graphql
   query ExampleQuery {
- 
-getAllUsers {
-  email
-  name
-  phone
-  id
-}
+    getAllUsers {
+    email
+    name
+    phone
+    id
+    }
  
 }
 - `getAllUsers`: Retrieve all Users.
@@ -119,9 +118,15 @@ getAllUsers {
 
 - `getTodos`: Retrieve user by ID.  
   Sample Query:
-
   ```graphql
-  query ExampleQuery($getUserByIdId: ID!) {getUserById(id: $getUserByIdId) { name email phone id}
+        query ExampleQuery($getUserByIdId: ID!) {
+        getUserById(id: $getUserByIdId)
+        {
+        name
+        email
+        phone 
+        id
+        }
  
 }
   
