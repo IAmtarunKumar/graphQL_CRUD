@@ -85,12 +85,11 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
   ```graphql
   query ExampleQuery( $getTodoByIdId: ID!) {
- 
-getTodoById(id: $getTodoByIdId) {
-  title
-  completed 
-  id
-}
+    getTodoById(id: $getTodoByIdId) {
+    title
+    completed 
+    id
+    }
  
 }
   
