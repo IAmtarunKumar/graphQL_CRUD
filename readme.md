@@ -94,7 +94,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
  
 }
   
-- `getTodoById(id: ID!)`: Retrieve a Todo by its ID.
+
 <hr>
 
 
@@ -112,7 +112,8 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
     }
  
 }
-- `getAllUsers`: Retrieve all Users.
+
+
 
 <hr>
 
