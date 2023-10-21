@@ -76,7 +76,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 `Variable`
  
-  ```graphql
+```graphql
   {
     ddff : fd
   }
