@@ -62,9 +62,9 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 <img src="./img//get_all_todo.png" alt="">
 
-- `getTodos`: Retrieve all Todos.
-    `Operation`
+- `getTodos`: Retrieve all Todos.  
   Sample Query:
+
   ```graphql
   query {
     getTodos {
@@ -73,21 +73,65 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
       completed
     }
   }
-
-
-
-
-
-
 - `getTodos`: Retrieve all Todos.
 
-![Alt Text](./img/get all user.png)
+
+
+
+<img src="./img//get_todo_by_id.png" alt="">
+
+- `getTodos`: Retrieve Todo by ID.  
+  Sample Query:
+
+  ```graphql
+  query ExampleQuery( $getTodoByIdId: ID!) {
+ 
+getTodoById(id: $getTodoByIdId) {
+  title
+  completed 
+  id
+}
+ 
+}
+  
 - `getTodoById(id: ID!)`: Retrieve a Todo by its ID.
 
-![Alt Text](./img/get all user.png)
+
+
+<img src="./img//get_all_user.png" alt="">
+
+- `getTodos`: Retrieve all users.  
+  Sample Query:
+
+  ```graphql
+  query ExampleQuery {
+ 
+getAllUsers {
+  email
+  name
+  phone
+  id
+}
+ 
+}
 - `getAllUsers`: Retrieve all Users.
 
-![Alt Text](./img/get user by id.png)
+<img src="./img//get_user_by_id.png" alt="">
+
+- `getTodos`: Retrieve user by ID.  
+  Sample Query:
+
+  ```graphql
+  query ExampleQuery($getUserByIdId: ID!) {
+ getUserById(id: $getUserByIdId) {
+   name
+   email
+   phone
+   id
+ }
+ 
+}
+  
 - `getUserById(id: ID!)`: Retrieve a User by their ID.
 
 ## Mutations
