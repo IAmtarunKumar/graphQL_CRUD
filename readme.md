@@ -179,13 +179,13 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
   Sample Query:
 
   ```graphql
-  mutation Mutation($input: TodoInput!) {
-  createTodo(input: $input) {
-    title
-    completed
-    userId
-  }
-}
+    mutation Mutation($input: TodoInput!) {
+    createTodo(input: $input) {
+        title
+        completed
+        userId
+        }
+    }
 
 - `createTodo(input: TodoInput!)`: Create a new Todo.
 <hr>
@@ -193,11 +193,11 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
   Sample Query:
 
   ```graphql
-  mutation Mutation(   $updateUserId: ID!,  $updateUserInput2: UserInput!) {
-    updateUser(id: $updateUserId, input: $updateUserInput2) {
-    name
+    mutation Mutation(   $updateUserId: ID!,  $updateUserInput2: UserInput!) {
+        updateUser(id: $updateUserId, input: $updateUserInput2) {
+            name
 
-    }
+     }
     }
 
 
