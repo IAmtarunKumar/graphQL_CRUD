@@ -60,8 +60,26 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 ## Queries
 
+**Operation**
+    ```bash
+    query ExampleQuery( $getTodoByIdId: ID!) {
+    getTodoById(id: $getTodoByIdId) {
+    title
+    completed 
+    id
+}
+ 
+}
 
-!(./img/get_all_todo.png)
+
+
+**Variable**
+```bash
+{
+  "getTodoByIdId": "6533747435c3c0fb76f6d248"
+}
+
+
 - `getTodos`: Retrieve all Todos.
 
 ![Alt Text](./img/get all user.png)
