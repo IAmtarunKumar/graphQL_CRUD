@@ -63,6 +63,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 
 - `getTodos`: Retrieve all Todos.
+    `Operation`
   Sample Query:
   ```graphql
   query {
@@ -71,6 +72,12 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
       title
       completed
     }
+  }
+  `Variable`
+ 
+  ```graphql
+  {
+    ddff : fd
   }
 
 
