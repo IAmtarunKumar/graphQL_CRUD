@@ -122,13 +122,7 @@ getAllUsers {
   Sample Query:
 
   ```graphql
-  query ExampleQuery($getUserByIdId: ID!) {
- getUserById(id: $getUserByIdId) {
-   name
-   email
-   phone
-   id
- }
+  query ExampleQuery($getUserByIdId: ID!) {getUserById(id: $getUserByIdId) { name email phone id}
  
 }
   
