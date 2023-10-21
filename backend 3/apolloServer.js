@@ -2,7 +2,7 @@
 const { TodoModel } = require("./model/todoModel");
 const { UserModel } = require("./model/userModel");
 const { ApolloServer } = require("@apollo/server");
-const { default: axios } = require("axios");
+// const { default: axios } = require("axios");
 const server = new ApolloServer({
     typeDefs : `
         type User {
