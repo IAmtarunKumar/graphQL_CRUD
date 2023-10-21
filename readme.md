@@ -64,7 +64,6 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 - `getTodos`: Retrieve all Todos.  
   Sample Query:
-
   ```graphql
   query {
     getTodos {
@@ -82,7 +81,6 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 - `getTodoById(id: ID!)`: Retrieve Todo by ID.  
   Sample Query:
-
   ```graphql
   query ExampleQuery( $getTodoByIdId: ID!) {
     getTodoById(id: $getTodoByIdId) {
@@ -101,7 +99,6 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 - `getAllUsers`: Retrieve all users.  
   Sample Query:
-
   ```graphql
   query ExampleQuery {
     getAllUsers {
