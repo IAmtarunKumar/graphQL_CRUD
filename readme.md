@@ -21,4 +21,8 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/graphql-server.git
+   git clone https://github.com/IAmtarunKumar/graphQL_CRUD.git
+
+ ```cd graphql-server
+    npm install
+
