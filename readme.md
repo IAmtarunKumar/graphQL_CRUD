@@ -80,7 +80,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 <img src="./img//get_todo_by_id.png" alt="">
 
- 
+- `getTodos`: Retrieve Todo by ID.  
   Sample Query:
 
   ```graphql
@@ -99,7 +99,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 <img src="./img//get_all_user.png" alt="">
 
-  
+- `getTodos`: Retrieve all users.  
   Sample Query:
 
   ```graphql
@@ -118,7 +118,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 <img src="./img//get_user_by_id.png" alt="">
 
- 
+- `getTodos`: Retrieve user by ID.  
   Sample Query:
   ```graphql
         query ExampleQuery($getUserByIdId: ID!) {
@@ -138,7 +138,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 <img src="./img//get_all_todo.png" alt="">
 
-
+- `getTodos`: Create User.  
   Sample Query:
 
   ```graphql
@@ -155,7 +155,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 <hr>
 <img src="./img//get_all_todo.png" alt="">
 
-
+- `getTodos`: Create User.  
   Sample Query:
 
   ```graphql
