@@ -62,7 +62,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 <img src="./img//get_all_todo.png" alt="">
 
-
+- `getTodos`: Retrieve all Todos.  
   Sample Query:
 
   ```graphql
@@ -80,7 +80,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 <img src="./img//get_todo_by_id.png" alt="">
 
-- `getTodos`: Retrieve Todo by ID.  
+- `getTodoById(id: ID!)`: Retrieve Todo by ID.  
   Sample Query:
 
   ```graphql
@@ -99,7 +99,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 <img src="./img//get_all_user.png" alt="">
 
-- `getTodos`: Retrieve all users.  
+- `getAllUsers`: Retrieve all users.  
   Sample Query:
 
   ```graphql
@@ -118,7 +118,7 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 <img src="./img//get_user_by_id.png" alt="">
 
-- `getTodos`: Retrieve user by ID.  
+- `getUserById(id: ID!)`: Retrieve user by ID.  
   Sample Query:
   ```graphql
         query ExampleQuery($getUserByIdId: ID!) {
@@ -136,9 +136,9 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 ## Mutations
 
-<img src="./img//get_all_todo.png" alt="">
+<img src="./img//create_user.png" alt="">
 
-- `getTodos`: Create User.  
+- `createUser`: Create User.  
   Sample Query:
 
   ```graphql
@@ -153,9 +153,9 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 
 <hr>
-<img src="./img//get_all_todo.png" alt="">
+<img src="./img//update_user.png" alt="">
 
-- `getTodos`: Create User.  
+- `updateUser`: Update User.  
   Sample Query:
 
   ```graphql
@@ -168,41 +168,74 @@ This is a simple GraphQL server built using Apollo Server, MongoDB, and Mongoose
 
 - `updateUser(id: ID!, input: UserInput!)`: Update a User.
 <hr>
+
+<img src="./img//delete_user.png" alt="">
+
+- `deleteUser`: Delete User.  
+  Sample Query:
+
+  ```graphql
+  mutation($deleteUserId: ID!){
+  deleteUser(id: $deleteUserId) {
+    name
+        }
+    }
+
+
+
+
 - `deleteUser(id: ID!)`: Delete a User.
 <hr>
 
 
 
-<img src="./img//get_all_todo.png" alt="">
+<img src="./img//create_todo.png" alt="">
 
-- `getTodos`: Create Todos.  
+- `createTodo`: Create Todos.  
   Sample Query:
 
   ```graphql
-    mutation Mutation($input: TodoInput!) {
-    createTodo(input: $input) {
-        title
-        completed
-        userId
-        }
-    }
+  mutation Mutation($input: TodoInput!) {
+  createTodo(input: $input) {
+    title
+    completed
+    userId
+  }
+}
 
 - `createTodo(input: TodoInput!)`: Create a new Todo.
 <hr>
-- `getTodos`: Create User.  
+
+<img src="./img//update_todo.png" alt="">
+
+
+- `updateTodo`: Update todo.  
   Sample Query:
-
   ```graphql
-    mutation Mutation(   $updateUserId: ID!,  $updateUserInput2: UserInput!) {
-        updateUser(id: $updateUserId, input: $updateUserInput2) {
-            name
+    mutation Mutation( $updateTodoId: ID!, $input: TodoInput!) {
+    updateTodo(id: $updateTodoId, input: $input) {
+    title
+ }
+}
 
-     }
-    }
 
 
 - `updateTodo(id: ID!, input: TodoInput!)`: Update a Todo.
 <hr>
+
+<img src="./img//delete_todo.png" alt="">
+
+
+- `deleteTodo`: delete Todos.  
+  Sample Query:
+  ```graphql
+        mutation Mutation($deleteTodoId: ID!) {
+        deleteTodo(id: $deleteTodoId) {
+            title
+  }
+}
+
+
 - `deleteTodo(id: ID!)`: Delete a Todo.
 <hr>
 
